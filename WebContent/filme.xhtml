@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<link href="css/estilo.css" rel="stylesheet"></link>
+<script type="text/javascript" src="js/mascara.js"></script>
+<script type="text/javascript" src="js/navegacao.js"></script>
+</head>
+<body>
+	<form action="gravaFilme">
+		<h1 align="center" class="title">CADASTRO DE FILME</h1>
+		<div class="div1" align="center">
+			<br /> <br /> Codigo:&nbsp; <input type="text" size="2px"
+				name="codigo" onkeyup="masc_numero(this)" /> <br /> <br />
+			Nome:&nbsp; <input size="22px" name="nome" /><br /> <br />Genero:&nbsp;
+			<input type="text" size="17px" name="genero" /><br /> <br />
+			Valor:&nbsp;<input type="text" size="10px" name="valor"
+				onkeyup="masc_moeda(this)" /> <br /> <br /> Disponivel:&nbsp;<input
+				type="radio" name="disponivel" value="sim" />SIM &nbsp;<input
+				type="radio" name="disponivel" value="nao" />NÃO <br /> <br />
+			Promoção:&nbsp;<input type="radio" name="promocao" value="sim" />SIM
+			&nbsp;<input type="radio" name="promocao" value="nao" />NÃO <br />
+			<br /> Valor Promoção:&nbsp;<input type="text" size="10px"
+				name="valorPromocao" onkeyup="masc_moeda(this)" /> <br /> <br />
+			<br />
+		</div>
+		<div class="div6">
+			<input type="submit" value="SALVAR" />&nbsp;&nbsp;&nbsp; <input
+				type="reset" value="CANCELAR" /> &nbsp;&nbsp;&nbsp;<br /> <br />
+			<button type="button" onclick="index()">VOLTAR</button>
+			&nbsp;&nbsp;&nbsp;
+			<button type="button" onclick="genero()">CADASTRO DE GÊNERO</button>
+		</div>
+	</form>
+</body>
+</html>

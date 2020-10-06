@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<link href="css/estilo.css" rel="stylesheet"></link>
+	<script type="text/javascript" src="js/mascara.js"></script>
+	<script type="text/javascript" src="js/navegacao.js"></script>
+	</h:head>
+<body>
+	<form action="gravaCliente">
+		<h1 align="center" class="title3">CADASTRO DE CLIENTE</h1>
+		<div class="div3">
+		<br /> <br />
+			Nome:&nbsp; <input type="text" size="25px" name="nome" /><br /> <br />
+			Lougradouro:&nbsp; <input type="text" size="25px" name="logradouro" /><br />
+			<br /> numero:&nbsp; <input type="text" size="5px" name="numero"
+				onkeyup="masc_numero(this)" /> Bairro:&nbsp; <input type="text"
+				size="15px" name="bairro" /> <br /> <br />Cidade:&nbsp; <input
+				type="text" size="15px" name="cidade" /> UF:&nbsp; <input
+				type="text" size="5px" name="uf" /> <br /> <br /> 
+			telefone:&nbsp; <input type="text" size="15px" name="telefone"
+				onkeyup="masc_telefone(this)" /><br /> <br /> CPF:&nbsp; <input
+				type="text" size="15px" name="cpf" onkeyup="masc_cpf(this)" />
+			RG:&nbsp; <input type="text" size="15px" name="rg"
+				onkeyup="masc_rg(this)" /><br /> <br /> <input type="radio"
+				name="sexo" value="m" />Masculino&nbsp; <input type="radio"
+				name="sexo" value="f" />Feminino <br /> <br /> Data de
+			nascimento:&nbsp; <input type="text" size="15px" name="dataNascimento"
+				onkeyup="masc_data(this)" />Idade:&nbsp; <input type="text"
+				size="5px" name="idade" onkeyup="masc_numero(this)" /><br />
+
+		</div>
+		<div class="div5">
+			<br /> <input type="submit" value="SALVAR" />&nbsp;&nbsp;&nbsp; <input
+				type="reset" value="CANCELAR" /> &nbsp;&nbsp;&nbsp;
+			<button type="button" onclick="index()">VOLTAR</button>
+		</div>
+	</form>
+</body>
+</html>

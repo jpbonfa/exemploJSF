@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<link href="css/estilo.css" rel="stylesheet"></link>
+	<script type="text/javascript" src="js/navegacao.js"></script>
+	<script type="text/javascript" src="js/mascara.js"></script>
+</h:head>
+<body>
+	<center>
+		<h1 class="title5" align="center">Cadastro de Produto</h1>
+		<form action="gravaProduto">
+			<div class="div8">
+			<br /><br /><br />
+				Nome: &nbsp;&nbsp;<input type="text" size="17px" name="nome" /> <br />
+				<br /> Quantidade: &nbsp;&nbsp;<input id="quantidade" type="text"
+					size="5px" name="quantidade" onkeyup="masc_numero(this)" /><br />
+				<br /> Valor: &nbsp;&nbsp;<input id="valor" type="text"
+					size="17 px" name="valor" onkeyup="masc_total(this)" /> <br /> <br />
+				Valor Total: &nbsp;&nbsp;<input id="valor_total" type="text"
+					size="17 px" name="valor_total" readonly="readonly"/> <br /><br />
+					<input type="submit" value="SALVAR" />&nbsp;&nbsp;
+				<button type="button" onclick="index()" >VOLTAR</button>
+			</div>
+		</form>
+
+	</center>
+</body>
+</html>

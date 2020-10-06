@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>exemploJSF</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
+
+	<servlet-mapping>
+		<servlet-name>filme</servlet-name>
+		<url-pattern>/gravaFilme</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>filme</servlet-name>
+		<servlet-class>br.com.treinamento.exemplojsf.servlet.GravaFilme</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>vendedor</servlet-name>
+		<url-pattern>/gravaVendedor</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>vendedor</servlet-name>
+		<servlet-class>br.com.treinamento.exemplojsf.servlet.GravaVendedor</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cliente</servlet-name>
+		<url-pattern>/gravaCliente</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cliente</servlet-name>
+		<servlet-class>br.com.treinamento.exemplojsf.servlet.GravaCliente</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>genero</servlet-name>
+		<url-pattern>/gravaGenero</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>genero</servlet-name>
+		<servlet-class>br.com.treinamento.exemplojsf.servlet.GravaGenero</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>produto</servlet-name>
+		<url-pattern>/gravaProduto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>produto</servlet-name>
+		<servlet-class>br.com.treinamento.exemplojsf.servlet.GravaProduto</servlet-class>
+	</servlet>
+
+</web-app>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<link href="css/estilo.css" rel="stylesheet"></link>
+	<script type="text/javascript" src="js/mascara.js"></script>
+	<script type="text/javascript" src="js/navegacao.js"></script>
+</h:head>
+<body>
+	<form action="gravaVendedor">
+		<h1 align="center" class="title2">CADASTRO DE VENDEDOR</h1>
+		<div class="div2">
+			<br /> <br /> Nome:&nbsp; <input type="text" size="25px"
+				name="nome" /> <br /> <br /> Area de Venda:&nbsp; <input
+				type="text" size="16px" name="areaVenda" /> <br /> <br />
+			Cidade:&nbsp; <input type="text" size="15px" name="cidade" />
+			UF:&nbsp; <input type="text" size="5px" name="uf" /> <br /> <br />
+			<input type="radio" name="sexo" value="M" />Masculino &nbsp; <input
+				type="radio" name="sexo" value="F" />Feminino <br /> <br />
+			Idade:&nbsp; <input type="text" size="8	px" name="idade"
+				onkeyup="masc_numero(this)" /> <br /> <br /> Salario:&nbsp; <input
+				type="text" size="7px" name="salario" onkeyup="masc_moeda(this)" />
+			<br /> <br /> <br />
+		</div>
+		<div align="center" class="div4">
+			<input type="submit" value="SALVAR" />&nbsp;&nbsp;&nbsp; <input
+				type="reset" value="CANCELAR" /> &nbsp;&nbsp;&nbsp;
+
+			<button type="button" onclick="index()">VOLTAR</button>
+		</div>
+	</form>
+</body>
+</html>
