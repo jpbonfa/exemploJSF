@@ -6,7 +6,6 @@ import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 
 import br.com.treinamento.exemplojsf.model.Cliente;
-import br.com.treinamento.exemplojsf.model.Vendedor;
 
 public class ClienteDAO {
 

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,12 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import com.mysql.jdbc.Connection;
 
 import br.com.treinamento.exemplojsf.dao.ClienteDAO;
-import br.com.treinamento.exemplojsf.dao.VendedorDAO;
 import br.com.treinamento.exemplojsf.model.Cliente;
-import br.com.treinamento.exemplojsf.model.Vendedor;
 import br.com.treinamento.exemplojsf.util.ConnectionFactory;
 
 public class GravaCliente extends HttpServlet {
+	private static final long serialVersionUID = -7131485040664984883L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
